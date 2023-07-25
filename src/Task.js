@@ -5,15 +5,21 @@ import { tr } from "date-fns/locale";
 const Task = ({ taskObj, onComplete }) => {
   const date = new Date();
   const diff = differenceInDays(date, new Date(taskObj.deadline));
+  let bgColor;
+  if (diff > 0) {
+    bgColor = "bg-red-800 text-white";
+  } else if (diff <= 0 && diff >= -3) {
+    bgColor = "bg-[#ffd9d4]";
+  } else {
+    bgColor = "bg-indigo-100";
+  }
 
   return (
     <div className="task">
       <h3>{taskObj.title}</h3>
       <div className="deadline">
         son teslim:{" "}
-        <span
-          className={diff > 0 || diff <= -3 ? "bg-indigo-100" : "bg-[#ffd9d4]"}
-        >
+        <span className={bgColor}>
           {formatDistanceToNow(new Date(taskObj.deadline), {
             addSuffix: true,
             locale: tr,
