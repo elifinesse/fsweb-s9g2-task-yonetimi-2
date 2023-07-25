@@ -13,7 +13,6 @@
   gap: 2rem;
   overflow: auto;
 }
-
 .column {
   flex: 1;
   min-width: 240px;
@@ -34,7 +33,7 @@
 /* LAYOUT */
 
 /* TASK */
-.task {
+/* .task {
   padding: 1.5rem;
   background-color: #fff;
   border-radius: 5px;
@@ -42,7 +41,7 @@
   margin-top: 1rem;
   box-shadow: 0 4px 5px 0 rgb(0 0 0 / 10%);
 }
-
+ */
 /*.task h3 {
   font-size: 18px;
   color: #c8781a;
@@ -53,7 +52,7 @@
   font-size: 14px;
   color: #444;
 }*/
-
+/* 
 .task button {
   display: block;
   padding: 8px 12px;
@@ -64,15 +63,16 @@
   border: 0;
   cursor: pointer;
 }
-
+ */
 .pill {
-  display: inline-block;
+  /*  display: inline-block;
   padding: 5px 12px;
   font-size: 14px;
   border: 1px solid #ccc;
   margin-right: 4px;
   margin-bottom: 6px;
-  border-radius: 30px;
+  border-radius: 30px; */
+  @apply inline-block py-1 px-3 text-sm border border-[#ccc] border-solid	mr-1 mb-1.5 rounded-full;
 }
 
 .deadline {

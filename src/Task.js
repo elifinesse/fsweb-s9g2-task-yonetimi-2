@@ -15,7 +15,7 @@ const Task = ({ taskObj, onComplete }) => {
   }
 
   return (
-    <div className="task">
+    <div className="p-6 bg-white rounded leading-6 mt-4 shadow-md">
       <h3 className="text-lg text-[#c8781a]">{taskObj.title}</h3>
       <div className="deadline">
         son teslim:{" "}
@@ -35,7 +35,12 @@ const Task = ({ taskObj, onComplete }) => {
         ))}
       </div>
       {onComplete && (
-        <button onClick={() => onComplete(taskObj.id)}>Tamamlandı</button>
+        <button
+          className="block py-2 px-3 ml-auto bg-[#fecc91] shadow-md rounded border-0 cursor-pointer"
+          onClick={() => onComplete(taskObj.id)}
+        >
+          Tamamlandı
+        </button>
       )}
     </div>
   );
