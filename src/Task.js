@@ -16,7 +16,7 @@ const Task = ({ taskObj, onComplete }) => {
 
   return (
     <div className="task">
-      <h3>{taskObj.title}</h3>
+      <h3 className="text-lg text-[#c8781a]">{taskObj.title}</h3>
       <div className="deadline">
         son teslim:{" "}
         <span className={bgColor}>
@@ -26,7 +26,7 @@ const Task = ({ taskObj, onComplete }) => {
           })}
         </span>
       </div>
-      <p>{taskObj.description}</p>
+      <p className="text-sm	text-[#444] pt-2 pb-3">{taskObj.description}</p>
       <div>
         {taskObj.people.map((p) => (
           <span className="pill" key={p}>

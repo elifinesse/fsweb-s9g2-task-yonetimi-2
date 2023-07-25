@@ -43,16 +43,16 @@
   box-shadow: 0 4px 5px 0 rgb(0 0 0 / 10%);
 }
 
-.task h3 {
+/*.task h3 {
   font-size: 18px;
   color: #c8781a;
-}
+}*/
 
-.task p {
+/*.task p {
   padding: 0.5rem 0 0.75rem;
   font-size: 14px;
   color: #444;
-}
+}*/
 
 .task button {
   display: block;
